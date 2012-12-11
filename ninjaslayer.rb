@@ -93,7 +93,7 @@ if __FILE__ == $0 then
 	nt = NinjaslayerTogetter.new
 	NinjaslayerTogetter::NeoSaitamaUrls.each_with_index do |url, i|
 		page = nt.page url
-		%x(cat << EOP > NeoSaitama_#{sprintf "%02d", i}.rst \n#{page}\n EOP)
+		%x(cat << EOP > NeoSaitama_#{sprintf "%02d", i}.rst \n#{page}\nEOP)
 	end
 end
 
